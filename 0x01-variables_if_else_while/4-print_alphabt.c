@@ -8,17 +8,21 @@
  * Return: Always 0 (Success)
 */
 
+
+
 int main(void)
 {
-	char ch = 'a';
+char letter;
 
-	while (ch <= 'z')
+	for (letter = 'a'; letter <= 'z'; letter++) 
 	{
-		if (ch == 'e' || == 'q')
-			ch++;
-		putchar(ch);
-		ch++;
+	if (letter != 'e' && letter != 'q') 
+	{
+	putchar(letter);
 	}
+
+	}
+
 	putchar('\n');
 
 	return (0);
